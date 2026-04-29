@@ -46,6 +46,7 @@ li a{
     color:white;
     font-weight: 300;
 }
+/* create element inside page positioned relative to parent element*/
 li a::before{
 position: absolute;
 content: '';
@@ -56,5 +57,34 @@ top: 25px;
 border-radius: 1rem;
 /*hover effect and gradient effect*/
 transition: 0.3s ease-in-out;
-background: linear-gradient(to right, rgb(0,157,255)rgb (255,0,255))
+background: #377094;
+background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
 }
+li a:hover::before{
+    width: 100px;
+}
+.visit-btn{
+    padding: .8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+background: #377094;
+background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
+}
+/* when hover, a bit bigger*/
+.visit-btn:hover{
+ background: #377094;
+background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
+    transform: scale(1.03);
+}
+/*menu icon- increase size/ not visible rn*/
+#menu-icon{
+    font-size:2rem;
+    display: none;
+}
+
