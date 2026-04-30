@@ -186,12 +186,15 @@ transition: .2s ease-in-out;
 .visualarts img{
     display: flexbox;
     width:40vw;
+ 
+  width: 100%;
+  max-height: 100%;
     
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap:.5rem;
+    gap:.2rem;
 }
 .grid-card{
     
