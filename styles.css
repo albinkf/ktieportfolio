@@ -224,9 +224,9 @@ transition: .2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 .grid-card:hover{
-   
+
     background-color: rgba(110, 31, 31, 0.568);
-  
+
 }
 .grid-card i{
     font-size: 1rem;
@@ -241,7 +241,7 @@ color: rgb(0, 0, 0);
     width: 20px;
 }
 ::-webkit-scrollbar-track{
-    background-color: gray;
+    background-color: rgb(6, 4, 4);
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom 90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
