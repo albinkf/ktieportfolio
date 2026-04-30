@@ -39,28 +39,28 @@
     <div class="visualarts-info">
 
       <div class="grid">
-          <div class="grid-card">
+          <div class="grid-card" id="Flesh">
                 <img src="images/Flesh.jpg" alt="Flesh">
                 <span></span>
                 <h3>"Flesh"</h3>
                 <p>Digital, 2025</p>
         </div>
 
-        <div class="grid-card">
+        <div class="grid-card" id="Jaguar">
                 <img src="images/jaguar.jpg" alt="Jaguar">
                 <span></span>
                 <h3>"Jaguar"</h3>
                 <p>Digital, 2025</p>
         </div>
 
-        <div class="grid-card">
+        <div class="grid-card" id="Tiger">
                 <img src="images/Tiger.jpg" alt="Tiger">
                 <span></span>
-                <h3>"Tiger"</h3>
+                <h3 >"Tiger"</h3>
                 <p>Digital, 2025</p>
         </div>
 
-        <div class="grid-card">
+        <div class="grid-card" id="Rest">
                 <img src="images/Rest.jpg" alt="Rest">
                 <span></span>
                 <h3>"Rest"</h3>
@@ -68,7 +68,22 @@
         </div>
      </div>
 </div>
+<!-- Modal thing, derived and modified from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+<div id="myModal" class="modal">
 
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+   <div class="modal-image">
+  <img class="modal-content" id="Tiger" src="images/Tiger.jpg" alt="Tiger">
+    <img class="modal-content" id="Flesh" src="images/Flesh.jpg" alt="Flesh">
+ <img class="modal-content" id="Jaguar" src="images/jaguar.jpg" alt="Jaguar">
+  <img class="modal-content" id="Rest" src="images/Rest.jpg" alt="Rest">
+</div>
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 </section>
 <!--WEBPRojects-->
 <section id="webprojects" class="webprojects">
