@@ -11,6 +11,20 @@ text-decoration: none;
 scroll-behavior: smooth;
 list-style: none;
 
+
+}
+button {
+       background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
+    background-clip: text;
+color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+body {
+    color: rgb(253, 242, 203);
+    background: rgb(52, 10, 51);
 }
 header{
     position: fixed;
@@ -22,21 +36,14 @@ header{
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-color: rgb(52, 10, 51);
+    background-color:rgba(110, 31, 31, 0.568) ;
     backdrop-filter: blur(8px);
-    color: white;
+    color: rgb(253, 242, 203);;
     padding: 1rem 1.5rem;
     border-radius: 4rem;
     z-index: 1000;
 }
-.logo{
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    text-wrap: nowrap;
-    display: inline-flex;
-    /*hover effect*/
-    transition: 0.3s ease-in-out;
-}
+
 .logo img{
     
      width: 90px;
@@ -83,27 +90,7 @@ background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1
 li a:hover::before{
     width: 100px;
 }
-/*maybe get rid of
-.visit-btn{
-    padding: .8rem 1.5rem;
-    border-radius: 3rem;
-    border: none;
-    font-weight: 500;
-    font-size: 1rem;
-    color: white;
-    cursor: pointer;
-    text-wrap: nowrap;
-    transition: 0.3s ease-in-out;
-background: #377094;
-background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
-}
-/* when hover, a bit bigger*/
-*/*/.visit-btn:hover{
- background: #377094;
-background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
-    transform: scale(1.03);
-}
-*/
+
 /*menu icon- increase size/ not visible rn*/
 
 #menu-icon{
@@ -131,9 +118,30 @@ justify-content: center;
  }
 .about img{
     /*viewport width*/
-    width: 20vw;
-    border-radius: 55%;
+    width: 30vw;
+    border-radius: 50%;
 }
+.socials{
+    display: flex;
+    gap: 2rem;
+    
+}
+.socials i{
+    background: linear-gradient(90deg,rgba(55, 112, 148, 1) 0%, rgba(150, 32, 148, 1) 59%, rgba(155, 42, 42, 1) 96%);
+    background-clip: text;
+color: transparent;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Something else*/
 .info-box{
     display: flex;
  /*3 sections within, want them stacked on top of each other*/
@@ -167,29 +175,17 @@ font-size: 2rem;
 .btn{
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
-    border: 2px solid black ;
+    border: 2px solid rgba(110, 31, 31, 0.568) ;
     cursor: pointer;
 font-weight: 500;
 text-wrap: nowrap;
 transition: .2s ease-in-out;
+
 }
 
 .btn:hover{
-    background-color: black;
+    background-color: rgba(110, 31, 31, 0.568);
     color: white;
-}
-.socials{
-    display: flex;
-    gap: 2rem;
-}
-.socials i{
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-
-}
-.socials i:hover{
-    transform: scale(1.1);
 }
 
 /*VISUALARTSSECTION*/
@@ -229,7 +225,7 @@ transition: .2s ease-in-out;
 }
 .grid-card:hover{
    
-    background-color: rgba(0, 0, 0, 0.31);
+    background-color: rgba(110, 31, 31, 0.568);
   
 }
 .grid-card i{
@@ -264,13 +260,13 @@ align-items: center;
 justify-content: center;
 text-align: center;
 gap: 1.5rem;
-border: 2px solid black;
+border: 2px solid rgba(110, 31, 31, 0.568);
 border-radius: 3rem ;
 cursor: pointer;
 transition: 0.3s ease-in-out;
 }
 .project-card:hover{
-    background-color: black;
+    background-color: rgba(110, 31, 31, 0.568);
     color: white;
     transform: translateY(-10px)scale(1.02);
 }
@@ -286,7 +282,7 @@ transition: 0.3s ease-in-out;
 .project-card:hover .btn:hover{
     border: 2px solid white;
     background-color: white;
-    color: black;
+    color: rgba(110, 31, 31, 0.568);
 }
 .project-card h3{
     font-size: 2rem;
@@ -315,6 +311,8 @@ transition: 0.3s ease-in-out;
     top: 50%;
     left: 10px;
     transform: (50%,-50%);
+    background: transparent;
+    
 }
 
 footer{
@@ -335,7 +333,7 @@ footer ul{
 }
 
 footer ul li a{
-    color: black;
+    color:rgb(253, 242, 203);
     font-weight: 600 ;
 }
 .copyright {
