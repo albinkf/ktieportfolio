@@ -9,7 +9,9 @@ const soundboardBtn = document.getElementById('soundboard-btn');
 const musicplayerBtn = document.getElementById('musicplayer-btn');
 const dadjokesBtn = document.getElementById('dadjokes-btn');
 const guessinggameBtn = document.getElementById('guessinggame-btn');
-
+const canvasapiBtn = document.getElementById('canvasapi-btn');
+const pianoBtn = document.getElementById('piano-btn');
+const chromeBtn = document.getElementById('chrome-btn');
 //SOCIAL MEDIA links
 // click button, open in new tab
 instagramBtn.addEventListener('click', () => {
@@ -45,25 +47,38 @@ guessinggameBtn.addEventListener('click', () => {
 dadjokesBtn.addEventListener('click', () => {
   window.open('https://albinkf.github.io/dad-jokes/', '_blank');
 });
+canvasapiBtn.addEventListener('click', () => {
+  window.open('https://albinkf.github.io/canvasapi/', '_blank');
+});
+pianoBtn.addEventListener('click', () => {
+  window.open('https://albinkf.github.io/Build-A-Piano/', '_blank');
+});
+chromeBtn.addEventListener('click', () => {
+  window.open('https://albinkf.github.io/Chrome-Extension/', '_blank');
+});
 
-// Get the modal
+
+
+//derived from https://www.w3schools.com/howto/howto_css_modal_images.asp, debugging assisted by Google Overview
+// get modal 
 var modal = document.getElementById("myModal");
-var modalImg = document.getElementById("imgmodal-contn");
+var modalImg = document.getElementById("modal-image"); 
 var captionText = document.getElementById("caption");
 
-// 2. Select ALL images (using a class, e.g., "modal-image")
-var images = document.querySelectorAll(".modal-image");
+// select image by class
+var images = document.querySelectorAll(".grid-card img");
 
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+//add click event to each image
+images.forEach(function(img) {
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+});
 
-// Get the <span> element that closes the modal
+// close
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on (x), close the modal
-span.onclick = function() {
+span.onclick = function() { 
   modal.style.display = "none";
-} 
+}
